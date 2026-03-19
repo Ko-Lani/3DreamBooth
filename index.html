@@ -110,9 +110,14 @@
       border:1.5px solid var(--border2);
     }
     .hero-link.paper:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
-    .hero-link.code {
+    /* .hero-link.code {
       background:transparent; color:var(--muted2);
       border:1.5px solid var(--border2);
+    }*/
+    .hero-link.coming-soon {
+      opacity: 0.35;
+      cursor: default;
+      pointer-events: none;
     }
     .hero-link.code:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
     .hero-link.dataset {
@@ -400,9 +405,12 @@
     <a class="hero-link paper" href="https://arxiv.org/abs/2412.11525" target="_blank">
       📄 arXiv Paper
     </a>
-    <a class="hero-link code" href="https://github.com/Ko-Lani/3DreamBooth" target="_blank">
+    <!-- <a class="hero-link code" href="https://github.com/Ko-Lani/3DreamBooth" target="_blank">
       💻 GitHub Code
-    </a>
+    </a> -->
+    <span class="hero-link code coming-soon">
+      💻 Code (Coming Soon)
+    </span>
     <a class="hero-link dataset" href="https://github.com/Ko-Lani/3DreamBooth" target="_blank">
       🗂️ Dataset
     </a>
