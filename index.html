@@ -36,11 +36,9 @@
       transition: background 0.35s, color 0.35s;
     }
 
-    /* THEME TOGGLE */
     .theme-toggle {
       width: 42px; height: 42px; border-radius: 50%;
-      border: 1px solid var(--border2);
-      background: var(--surf2);
+      border: 1px solid var(--border2); background: var(--surf2);
       cursor: pointer; font-size: 1.2rem;
       display: flex; align-items: center; justify-content: center;
       transition: all 0.25s; flex-shrink: 0;
@@ -105,25 +103,12 @@
       text-decoration:none; letter-spacing:0.06em; text-transform:uppercase;
       transition:all 0.25s;
     }
-    .hero-link.paper {
-      background:transparent; color:var(--muted2);
-      border:1.5px solid var(--border2);
-    }
+    .hero-link.paper { background:transparent; color:var(--muted2); border:1.5px solid var(--border2); }
     .hero-link.paper:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
-    /* .hero-link.code {
-      background:transparent; color:var(--muted2);
-      border:1.5px solid var(--border2);
-    }*/
-    .hero-link.coming-soon {
-      opacity: 0.35;
-      cursor: default;
-      pointer-events: none;
-    }
+    .hero-link.code { background:transparent; color:var(--muted2); border:1.5px solid var(--border2); }
     .hero-link.code:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
-    .hero-link.dataset {
-      background:transparent; color:var(--muted2);
-      border:1.5px solid var(--border2);
-    }
+    .hero-link.coming-soon { opacity: 0.35; cursor: default; pointer-events: none; }
+    .hero-link.dataset { background:transparent; color:var(--muted2); border:1.5px solid var(--border2); }
     .hero-link.dataset:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
     [data-theme="light"] .hero-link.dataset { color:var(--gold); border-color:var(--gold); }
     [data-theme="light"] .hero-link.dataset:hover { background:var(--gold); color:#f5f2ec; }
@@ -133,86 +118,12 @@
     [data-theme="light"] .hero-link.code:hover { background:var(--gold); color:#f5f2ec; }
 
     .hero-video-wrap { width:100%; max-width:1100px; }
-    .hero-tabs { display:flex; gap:14px; justify-content:center; margin-bottom:22px; flex-wrap:wrap; }
-    .hero-tab {
-      background:var(--surf2); border:1px solid var(--border2); color:var(--muted2);
-      padding:13px 32px; border-radius:100px; cursor:pointer;
-      font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:500;
-      letter-spacing:0.03em; transition:all 0.25s;
-    }
-    .hero-tab:hover { color:var(--text); border-color:rgba(255,255,255,0.22); }
-    .hero-tab.active { background:var(--gold); border-color:var(--gold); color:#09090c; font-weight:600; }
     .hero-video-box {
-      border-radius:20px; overflow:hidden; border:1px solid var(--border2);
-      box-shadow: none; position:relative; background:#000;
-      flex: 1; order: 1;
+      border-radius:20px; overflow:hidden;
+      border:1px solid var(--border2);
+      background:#000;
     }
-    .hero-content-row {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      height: 480px;
-      gap: 12px;
-    }
-    .hero-video-box {
-      border-radius: 20px; overflow: hidden; border: 1px solid var(--border2);
-      box-shadow: none; position: relative; background: #000;
-      flex: 1; order: 1; height: 100%;
-    }
-    .hero-refs-col {
-      width: 108px;
-      flex-shrink: 0;
-      order: 2;
-    }
-    .hero-refs-panel {
-      display: none;
-      flex-direction: column;
-      gap: 6px;
-      height: 100%;
-    }
-    .hero-refs-panel.active { display: flex; }
-    .hero-refs-panel img {
-      flex: 1;
-      width: 100%;
-      min-height: 0;
-      object-fit: cover;
-      border-radius: 8px;
-      outline: none !important;
-      border: 2.5px solid rgba(200,169,106,0.85);
-      box-shadow: 0 4px 14px rgba(0,0,0,0.22);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .hero-refs-panel img:nth-child(1) { transform: rotate(-2deg); }
-    .hero-refs-panel img:nth-child(2) { transform: rotate(1.5deg); }
-    .hero-refs-panel img:nth-child(3) { transform: rotate(-1deg); }
-    .hero-refs-panel img:nth-child(4) { transform: rotate(2deg); }
-    .hero-refs-panel img:hover {
-      transform: rotate(0deg) scale(1.05);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3), 0 0 0 2px rgba(200,169,106,0.75);
-      z-index: 10;
-      position: relative;
-    }
-    .hero-refs-panel img {
-      flex: 1;
-      width: 100%;
-      min-height: 0;
-      object-fit: cover;
-      border-radius: 10px;
-      outline: 2px solid rgba(200,169,106,0.55);
-      outline-offset: 2px;
-      box-shadow: none;
-    }
-
-    /* 비디오 박스 */
-    .hero-panel { display:none; }
-    .hero-panel.active { display:block; }
-    .hero-panel video { width:100%; display:block; max-height:65vh; object-fit:contain; }
-    .hero-caption {
-      position:absolute; bottom:0; left:0; right:0; padding:80px 36px 30px;
-      background:linear-gradient(0deg,rgba(0,0,0,0.9) 0%,transparent 100%);
-      font-size:1.2rem; font-style:italic; color:rgba(255,255,255,0.8); line-height:1.7;
-    }
-    .hero-caption b { color:var(--gold); font-style:normal; font-weight:600; }
+    .hero-video-box video { width:100%; display:block; }
 
     .divider { height:1px; background:var(--border); }
     .container { max-width:1160px; margin:0 auto; }
@@ -311,21 +222,13 @@
     .badge-m { background:var(--blue-dim); color:var(--blue); border:1px solid rgba(95,150,224,0.2); }
     .sup-num { font-size:0.68em; color:var(--muted); vertical-align:super; }
 
-    /* Image theme switching — !important to beat .method-fig img specificity */
     .img-light { display: none !important; }
     .img-dark  { display: block !important; }
     [data-theme="light"] .img-light { display: block !important; }
     [data-theme="light"] .img-dark  { display: none !important; }
-
-    /* Light mode figures: white padding around image */
     [data-theme="light"] .method-fig .img-light {
-      margin: 20px;
-      width: calc(100% - 40px);
-      border-radius: 8px;
-      padding: 16px;
-      background: #ffffff;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-      box-sizing: border-box;
+      margin: 20px; width: calc(100% - 40px); border-radius: 8px;
+      padding: 16px; background: #ffffff; box-shadow: 0 2px 16px rgba(0,0,0,0.10); box-sizing: border-box;
     }
 
     .wan-badge { display:inline-flex; align-items:center; background:rgba(160,122,212,0.1); border:1px solid rgba(160,122,212,0.25); border-radius:100px; padding:6px 18px; font-family:'JetBrains Mono',monospace; font-size:0.75rem; letter-spacing:0.1em; color:var(--purple); margin-bottom:18px; }
@@ -346,7 +249,6 @@
     footer { padding:40px 52px; text-align:center; border-top:1px solid var(--border); font-family:'JetBrains Mono',monospace; font-size:0.85rem; color:var(--muted); letter-spacing:0.1em; background:var(--surf); transition: background 0.35s; }
     .mb-4 { margin-bottom:16px; }
 
-    /* Light mode overrides */
     [data-theme="light"] .method-fig { background: #eae5db; border-color: rgba(160,120,64,0.2); box-shadow: 0 0 0 1px rgba(160,120,64,0.06), 0 20px 60px rgba(0,0,0,0.12); }
     [data-theme="light"] body { font-weight: 400; }
     [data-theme="light"] .sec-desc { font-weight: 400; color: rgba(26,21,32,0.75); }
@@ -356,7 +258,6 @@
     [data-theme="light"] .diverse-cap { font-weight: 400; color: rgba(26,21,32,0.7); }
     [data-theme="light"] .nav-links a { color: rgba(26,21,32,0.6); }
     [data-theme="light"] .nav-links a:hover { color: rgba(26,21,32,0.95); }
-    [data-theme="light"] .hero-tab.active { color: #f5f2ec; }
     [data-theme="light"] .hero-caption { background: linear-gradient(0deg,rgba(0,0,0,0.85) 0%,transparent 100%); }
     [data-theme="light"] .prompt { color: rgba(26,21,32,0.82); }
     [data-theme="light"] .hero-glow { background: radial-gradient(ellipse, rgba(160,120,64,0.12) 0%, transparent 70%); }
@@ -402,66 +303,16 @@
   </div>
 
   <div class="hero-links">
-    <a class="hero-link paper" href="https://arxiv.org/abs/2412.11525" target="_blank">
-      📄 arXiv Paper
-    </a>
-    <!-- <a class="hero-link code" href="https://github.com/Ko-Lani/3DreamBooth" target="_blank">
-      💻 GitHub Code
-    </a> -->
-    <span class="hero-link code coming-soon">
-      💻 Code (Coming Soon)
-    </span>
-    <a class="hero-link dataset" href="https://github.com/Ko-Lani/3DreamBooth" target="_blank">
-      🗂️ Dataset
-    </a>
+    <a class="hero-link paper" href="https://arxiv.org/abs/2412.11525" target="_blank">📄 arXiv Paper</a>
+    <span class="hero-link code coming-soon">💻 Code (Coming Soon)</span>
+    <a class="hero-link dataset" href="https://github.com/Ko-Lani/3DreamBooth" target="_blank">🗂️ Dataset</a>
   </div>
 
   <div class="hero-video-wrap">
-    <div class="hero-tabs">
-      <button class="hero-tab active" data-target="hero-snowglobe">❄️ Snow Globe</button>
-      <button class="hero-tab" data-target="hero-sneaker">👟 Neon Street</button>
-      <button class="hero-tab" data-target="hero-champagne">🍾 Champagne</button>
-    </div>
-    <div class="hero-content-row">
-
-      <!-- 이미지 사이드 (탭마다 교체) -->
-      <div class="hero-refs-col">
-        <div class="hero-refs-panel active" id="refs-snowglobe">
-          <img src="images/ref_santa_1.png"/>
-          <img src="images/ref_santa_2.png"/>
-          <img src="images/ref_santa_3.png"/>
-          <img src="images/ref_santa_4.png"/>
-        </div>
-        <div class="hero-refs-panel" id="refs-sneaker">
-          <img src="images/ref_sneaker_white_1.png"/>
-          <img src="images/ref_sneaker_white_2.png"/>
-          <img src="images/ref_sneaker_white_3.png"/>
-          <img src="images/ref_sneaker_white_4.png"/>
-        </div>
-        <div class="hero-refs-panel" id="refs-champagne">
-          <img src="images/ref_champagne_1.png"/>
-          <img src="images/ref_champagne_2.png"/>
-          <img src="images/ref_champagne_3.png"/>
-          <img src="images/ref_champagne_4.png"/>
-        </div>
-      </div>
-
-      <!-- 비디오 박스 -->
-      <div class="hero-video-box">
-        <div class="hero-panel active" id="hero-snowglobe">
-          <video autoplay muted loop playsinline><source src="videos/demo_santa_snowglobe.mp4" type="video/mp4"/></video>
-          <div class="hero-caption">A video of a <b>[v]</b> plushie rotating inside an ornate Christmas snow globe with a miniature village.</div>
-        </div>
-        <div class="hero-panel" id="hero-sneaker">
-          <video autoplay muted loop playsinline><source src="videos/supp_sneaker_white_street.mp4" type="video/mp4"/></video>
-          <div class="hero-caption">A <b>[v]</b> sneaker on a human foot, sprinting on a wet urban street, neon reflections on wet asphalt.</div>
-        </div>
-        <div class="hero-panel" id="hero-champagne">
-          <video autoplay muted loop playsinline><source src="videos/supp_champagne_soccer.mp4" type="video/mp4"/></video>
-          <div class="hero-caption">A video of a triumphant soccer player raising a <b>[v]</b> champagne high during a pitchside interview.</div>
-        </div>
-      </div>
-
+    <div class="hero-video-box">
+      <video autoplay muted loop playsinline>
+        <source src="videos/demo.mp4" type="video/mp4"/>
+      </video>
     </div>
   </div>
 </section>
@@ -799,21 +650,6 @@
 <footer>3DreamBooth &nbsp;·&nbsp; High-Fidelity 3D Subject-Driven Video Generation</footer>
 
 <script>
-  document.querySelectorAll('.hero-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.hero-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.hero-panel').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('.hero-refs-panel').forEach(p => p.classList.remove('active'));
-      tab.classList.add('active');
-      const target = tab.dataset.target;
-      const panel = document.getElementById(target);
-      if (panel) { panel.classList.add('active'); const v = panel.querySelector('video'); if (v) { v.currentTime=0; v.play(); } }
-      const refsId = 'refs-' + target.replace('hero-', '');
-      const refs = document.getElementById(refsId);
-      if (refs) refs.classList.add('active');
-    });
-  });
-
   (function() {
     const wrap = document.getElementById('peek1');
     const outer = wrap.querySelector('.peek-outer');
@@ -869,7 +705,7 @@
     track.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(dx<-50&&idx<total-1)goTo(idx+1);if(dx>50&&idx>0)goTo(idx-1);});
     goTo(0);
   });
-  // Time-based theme: 07:00~19:00 → light, 나머지 → dark
+
   const toggle = document.getElementById('themeToggle');
   const html = document.documentElement;
   let manualOverride = false;
@@ -886,7 +722,6 @@
       toggle.textContent = '🌙';
     }
   }
-
   applyTimeTheme();
 
   function copyBibtex() {
