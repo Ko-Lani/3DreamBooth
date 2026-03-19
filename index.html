@@ -27,7 +27,8 @@
       --nav-bg: rgba(245,242,236,0.92);
     }
     * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior:smooth; zoom: 0.8; }
+    html { scroll-behavior:smooth; }
+    @media (min-width: 1024px) { html { zoom: 0.8; } }
     body {
       font-family: 'Outfit', sans-serif;
       background: var(--bg); color: var(--text);
@@ -234,14 +235,14 @@
     .wan-badge { display:inline-flex; align-items:center; background:rgba(160,122,212,0.1); border:1px solid rgba(160,122,212,0.25); border-radius:100px; padding:6px 18px; font-family:'JetBrains Mono',monospace; font-size:0.75rem; letter-spacing:0.1em; color:var(--purple); margin-bottom:18px; }
 
     .bibtex-section { padding:80px 52px; background:var(--surf); }
-    .bibtex-wrap { max-width:900px; margin:0 auto; }
+    .bibtex-wrap { max-width:1160px; margin:0 auto; }
     .bibtex-block { background:var(--bg); border:1px solid var(--border2); border-radius:16px; overflow:hidden; }
     .bibtex-header { display:flex; align-items:center; justify-content:space-between; padding:18px 28px; border-bottom:1px solid var(--border); }
     .bibtex-label { font-family:'JetBrains Mono',monospace; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); }
     .bibtex-copy { background:transparent; border:1px solid var(--border2); border-radius:8px; padding:7px 18px; color:var(--muted2); font-family:'JetBrains Mono',monospace; font-size:0.8rem; cursor:pointer; letter-spacing:0.06em; transition:all 0.2s; }
     .bibtex-copy:hover { border-color:var(--gold); color:var(--gold); background:var(--gold-dim); }
     .bibtex-copy.copied { border-color:var(--gold); color:var(--gold); }
-    .bibtex-code { padding:28px 32px; font-family:'JetBrains Mono',monospace; font-size:0.92rem; line-height:1.85; color:var(--muted2); white-space:pre; overflow-x:auto; }
+    .bibtex-code { padding:28px 32px; font-family:'JetBrains Mono',monospace; font-size:0.92rem; line-height:1.85; color:var(--muted2); white-space:pre-wrap; word-break:break-all; overflow-x:auto; }
     .bibtex-code .bib-key { color:var(--gold); }
     .bibtex-code .bib-field { color:var(--blue); }
     .bibtex-code .bib-val { color:var(--text); opacity:0.8; }
@@ -264,6 +265,30 @@
     [data-theme="light"] tbody tr:hover { background: rgba(0,0,0,0.03); }
     [data-theme="light"] .td-2nd { text-decoration-color: rgba(0,0,0,0.25); color: rgba(26,21,32,0.9); }
     [data-theme="light"] section, [data-theme="light"] section.alt { transition: background 0.35s; }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; height: 58px; }
+      .nav-links { display: none; }
+      .hero { padding: 80px 20px 48px; }
+      .hero h1 { font-size: clamp(3.8rem, 16vw, 6rem); }
+      .hero-sub { font-size: 1.2rem; }
+      .author-names { font-size: 1rem; }
+      .author-affils { gap: 14px; font-size: 0.95rem; }
+      .hero-links { gap: 8px; }
+      .hero-link { padding: 10px 16px; font-size: 0.78rem; }
+      section { padding: 56px 20px; }
+      .bibtex-section { padding: 56px 20px; }
+      .peek-outer { margin: 0 -20px; }
+      .peek-track { padding: 0 20px; }
+      .peek-slide { flex: 0 0 calc(92% - 8px); }
+      .comp-grid { grid-template-columns: 1fr; }
+      .abl-grid { grid-template-columns: 1fr; }
+      .diverse-grid { grid-template-columns: 1fr; }
+      .sec-title { font-size: 2.4rem; }
+      footer { padding: 32px 20px; font-size: 0.75rem; }
+      .bibtex-code { padding: 20px 16px; font-size: 0.75rem; }
+    }
   </style>
 </head>
 <body>
@@ -362,19 +387,19 @@
       <div class="peek-outer">
         <div class="peek-track">
           <div class="peek-slide active"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_cat_1.png"/><img src="images/ref_cat_2.png"/><img src="images/ref_cat_3.png"/><img src="images/ref_cat_4.png"/></div>
-            <div class="prompt">A video of a <b>[v]</b> figure held in a person's hand at a flea market with vintage stalls in the background.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/demo_cat_fleamarket.mp4" type="video/mp4"/></video>
+            <div class="ref-strip"><img src="images/ref_bag_silver_1.png"/><img src="images/ref_bag_silver_2.png"/><img src="images/ref_bag_silver_3.png"/><img src="images/ref_bag_silver_4.png"/></div>
+            <div class="prompt">An actress on a Hollywood red carpet raising a <b>[v]</b> bag and peering over it into the camera.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_bag_silver_redcarpet.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_chair_black_1.png"/><img src="images/ref_chair_black_2.png"/><img src="images/ref_chair_black_3.png"/><img src="images/ref_chair_black_4.png"/></div>
-            <div class="prompt">A video of a <b>[v]</b> chair at a bustling outdoor café, with people walking by and waiters carrying trays.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/demo_chair_black_cafe.mp4" type="video/mp4"/></video>
+            <div class="ref-strip"><img src="images/ref_motorcycle_1.png"/><img src="images/ref_motorcycle_2.png"/><img src="images/ref_motorcycle_3.png"/><img src="images/ref_motorcycle_4.png"/></div>
+            <div class="prompt">A video of a rider mounting a <b>[v]</b> motorcycle on a rain-soaked, neon-lit Tokyo street at night.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_motorcycle_tokyo.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_duck_pink_1.png"/><img src="images/ref_duck_pink_2.png"/><img src="images/ref_duck_pink_3.png"/><img src="images/ref_duck_pink_4.png"/></div>
-            <div class="prompt">A video of a <b>[v]</b> rubber duck floating in a clear swimming pool, swimmers in the background.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/demo_duck_pink_pool.mp4" type="video/mp4"/></video>
+            <div class="ref-strip"><img src="images/ref_watch_1.png"/><img src="images/ref_watch_2.png"/><img src="images/ref_watch_3.png"/><img src="images/ref_watch_4.png"/></div>
+            <div class="prompt">A video of hands rotating a <b>[v]</b> watch over autumn leaves, rustic stone wall and red apples behind.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_watch_autumn.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
             <div class="ref-strip"><img src="images/ref_chair_blue_1.png"/><img src="images/ref_chair_blue_2.png"/><img src="images/ref_chair_blue_3.png"/><img src="images/ref_chair_blue_4.png"/></div>
@@ -382,9 +407,34 @@
             <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_chair_blue_office.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
+            <div class="ref-strip"><img src="images/ref_cat_1.png"/><img src="images/ref_cat_2.png"/><img src="images/ref_cat_3.png"/><img src="images/ref_cat_4.png"/></div>
+            <div class="prompt">A video of a <b>[v]</b> figure held in a person's hand at a flea market with vintage stalls in the background.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/demo_cat_fleamarket.mp4" type="video/mp4"/></video>
+          </div></div>
+          <div class="peek-slide"><div class="peek-slide-inner">
+            <div class="ref-strip"><img src="images/ref_sculpture_1.png"/><img src="images/ref_sculpture_2.png"/><img src="images/ref_sculpture_3.png"/><img src="images/ref_sculpture_4.png"/></div>
+            <div class="prompt">A dramatic museum heist at night, two thieves in tactical gear carrying the <b>[v]</b> sculpture.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_sculpture_heist.mp4" type="video/mp4"/></video>
+          </div></div>
+          <div class="peek-slide"><div class="peek-slide-inner">
+            <div class="ref-strip"><img src="images/ref_duck_pink_1.png"/><img src="images/ref_duck_pink_2.png"/><img src="images/ref_duck_pink_3.png"/><img src="images/ref_duck_pink_4.png"/></div>
+            <div class="prompt">A video of a <b>[v]</b> rubber duck floating in a clear swimming pool, swimmers in the background.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/demo_duck_pink_pool.mp4" type="video/mp4"/></video>
+          </div></div>
+          <div class="peek-slide"><div class="peek-slide-inner">
             <div class="ref-strip"><img src="images/ref_bottle_pill_1.png"/><img src="images/ref_bottle_pill_2.png"/><img src="images/ref_bottle_pill_3.png"/><img src="images/ref_bottle_pill_4.png"/></div>
             <div class="prompt">A video of a woman twisting open the cap of a <b>[v]</b> pill bottle on a kitchen counter, natural daylight.</div>
             <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_bottle_pill_kitchen.mp4" type="video/mp4"/></video>
+          </div></div>
+          <div class="peek-slide"><div class="peek-slide-inner">
+            <div class="ref-strip"><img src="images/ref_chair_black_1.png"/><img src="images/ref_chair_black_2.png"/><img src="images/ref_chair_black_3.png"/><img src="images/ref_chair_black_4.png"/></div>
+            <div class="prompt">A video of a <b>[v]</b> chair at a bustling outdoor café, with people walking by and waiters carrying trays.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/demo_chair_black_cafe.mp4" type="video/mp4"/></video>
+          </div></div>
+          <div class="peek-slide"><div class="peek-slide-inner">
+            <div class="ref-strip"><img src="images/ref_snackbag_1.png"/><img src="images/ref_snackbag_2.png"/><img src="images/ref_snackbag_3.png"/><img src="images/ref_snackbag_4.png"/></div>
+            <div class="prompt">A woman reviewing a <b>[v]</b> snack bag in a bright supermarket aisle, filmed by a foreground cameraman.</div>
+            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_snackbag_supermarket.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
             <div class="ref-strip"><img src="images/ref_bottle_green_1.png"/><img src="images/ref_bottle_green_2.png"/><img src="images/ref_bottle_green_3.png"/><img src="images/ref_bottle_green_4.png"/></div>
@@ -417,34 +467,9 @@
             <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_duck_yellow_pool.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_watch_1.png"/><img src="images/ref_watch_2.png"/><img src="images/ref_watch_3.png"/><img src="images/ref_watch_4.png"/></div>
-            <div class="prompt">A video of hands rotating a <b>[v]</b> watch over autumn leaves, rustic stone wall and red apples behind.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_watch_autumn.mp4" type="video/mp4"/></video>
-          </div></div>
-          <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_bag_silver_1.png"/><img src="images/ref_bag_silver_2.png"/><img src="images/ref_bag_silver_3.png"/><img src="images/ref_bag_silver_4.png"/></div>
-            <div class="prompt">An actress on a Hollywood red carpet raising a <b>[v]</b> bag and peering over it into the camera.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_bag_silver_redcarpet.mp4" type="video/mp4"/></video>
-          </div></div>
-          <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_motorcycle_1.png"/><img src="images/ref_motorcycle_2.png"/><img src="images/ref_motorcycle_3.png"/><img src="images/ref_motorcycle_4.png"/></div>
-            <div class="prompt">A video of a rider mounting a <b>[v]</b> motorcycle on a rain-soaked, neon-lit Tokyo street at night.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_motorcycle_tokyo.mp4" type="video/mp4"/></video>
-          </div></div>
-          <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_snackbag_1.png"/><img src="images/ref_snackbag_2.png"/><img src="images/ref_snackbag_3.png"/><img src="images/ref_snackbag_4.png"/></div>
-            <div class="prompt">A woman reviewing a <b>[v]</b> snack bag in a bright supermarket aisle, filmed by a foreground cameraman.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_snackbag_supermarket.mp4" type="video/mp4"/></video>
-          </div></div>
-          <div class="peek-slide"><div class="peek-slide-inner">
             <div class="ref-strip"><img src="images/ref_seal_1.png"/><img src="images/ref_seal_2.png"/><img src="images/ref_seal_3.png"/><img src="images/ref_seal_4.png"/></div>
             <div class="prompt">A <b>[v]</b> plush being washed by sudsy hands, bright morning sunlight, modern bathroom background.</div>
             <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_seal_wash.mp4" type="video/mp4"/></video>
-          </div></div>
-          <div class="peek-slide"><div class="peek-slide-inner">
-            <div class="ref-strip"><img src="images/ref_sculpture_1.png"/><img src="images/ref_sculpture_2.png"/><img src="images/ref_sculpture_3.png"/><img src="images/ref_sculpture_4.png"/></div>
-            <div class="prompt">A dramatic museum heist at night, two thieves in tactical gear carrying the <b>[v]</b> sculpture.</div>
-            <video class="vid" autoplay muted loop playsinline controls><source src="videos/supp_sculpture_heist.mp4" type="video/mp4"/></video>
           </div></div>
           <div class="peek-slide"><div class="peek-slide-inner">
             <div class="ref-strip"><img src="images/ref_bear_grad_1.png"/><img src="images/ref_bear_grad_2.png"/><img src="images/ref_bear_grad_3.png"/><img src="images/ref_bear_grad_4.png"/></div>
