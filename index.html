@@ -292,7 +292,8 @@
       .sec-desc { font-size: 1rem; }
       .prompt { font-size: 0.95rem; padding: 12px 16px; margin-bottom: 12px; }
       .peek-slide-inner { gap: 10px; padding: 14px; }
-      .ref-strip { margin-bottom: 0; }
+      .ref-strip { gap: 4px; padding: 5px; }
+      .ref-strip img { border-radius: 6px; outline-width: 1.5px; }
       .method-fig figcaption { font-size: 0.82rem; line-height: 1.6; padding: 14px 16px; font-family: 'Outfit', sans-serif; }
       table { font-size: 0.78rem; }
       thead th { padding: 10px 8px; font-size: 0.62rem; letter-spacing: 0.04em; }
@@ -603,7 +604,7 @@
         </table></div>
       </div>
       <div class="table-block">
-        <div class="table-head"><div class="table-head-title">3D Geometric Fidelity</div><div class="table-head-desc">Chamfer Distance between point clouds reconstructed from generated frames and ground-truth multi-view images from 3D-CustomBench. Lower is better.</div></div>
+        <div class="table-head"><div class="table-head-title">3D Geometric Fidelity</div><div class="table-head-desc">Chamfer Distance between generated frames and ground-truth multiview images from 3D-CustomBench. Lower is better.</div></div>
         <div class="table-wrap"><table>
           <thead><tr><th>Method</th><th>Views</th><th>Accuracy ↓</th><th>Completeness ↓</th><th>CD ↓</th></tr></thead>
           <tbody>
