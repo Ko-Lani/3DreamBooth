@@ -678,14 +678,14 @@
         <span class="bibtex-label">bibtex</span>
         <button class="bibtex-copy" id="bibCopyBtn" onclick="copyBibtex()">Copy</button>
       </div>
-      <div class="bibtex-code" id="bibCode"><span class="bib-key">@inproceedings{ko2025sequence,</span>
-  <span class="bib-field">title</span>     = {<span class="bib-val">Sequence matters: Harnessing video models in 3d super-resolution</span>},
-  <span class="bib-field">author</span>    = {<span class="bib-val">Ko, Hyun-kyu and Park, Dongheok and Park, Youngin and Lee, Byeonghyeon and Han, Juhee and Park, Eunbyung</span>},
-  <span class="bib-field">booktitle</span> = {<span class="bib-val">Proceedings of the AAAI Conference on Artificial Intelligence</span>},
-  <span class="bib-field">volume</span>    = {<span class="bib-val">39</span>},
-  <span class="bib-field">number</span>    = {<span class="bib-val">4</span>},
-  <span class="bib-field">pages</span>     = {<span class="bib-val">4356--4364</span>},
-  <span class="bib-field">year</span>      = {<span class="bib-val">2025</span>},
+      <div class="bibtex-code" id="bibCode"><span class="bib-key">@misc{ko20263dreamboothhighfidelity3dsubjectdriven,</span>
+  <span class="bib-field">title</span>         = {<span class="bib-val">3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model</span>},
+  <span class="bib-field">author</span>        = {<span class="bib-val">Hyun-kyu Ko and Jihyeon Park and Younghyun Kim and Dongheok Park and Eunbyung Park</span>},
+  <span class="bib-field">year</span>          = {<span class="bib-val">2026</span>},
+  <span class="bib-field">eprint</span>        = {<span class="bib-val">2603.18524</span>},
+  <span class="bib-field">archivePrefix</span> = {<span class="bib-val">arXiv</span>},
+  <span class="bib-field">primaryClass</span>  = {<span class="bib-val">cs.CV</span>},
+  <span class="bib-field">url</span>           = {<span class="bib-val">https://arxiv.org/abs/2603.18524</span>},
 }</div>
     </div>
   </div>
@@ -770,7 +770,7 @@
   applyTimeTheme();
 
   function copyBibtex() {
-    const raw = `@inproceedings{ko2025sequence,\n  title     = {Sequence matters: Harnessing video models in 3d super-resolution},\n  author    = {Ko, Hyun-kyu and Park, Dongheok and Park, Youngin and Lee, Byeonghyeon and Han, Juhee and Park, Eunbyung},\n  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},\n  volume    = {39},\n  number    = {4},\n  pages     = {4356--4364},\n  year      = {2025},\n}`;
+    const raw = `@misc{ko20263dreamboothhighfidelity3dsubjectdriven,\n  title         = {3DreamBooth: High-Fidelity 3D Subject-Driven Video Generation Model},\n  author        = {Hyun-kyu Ko and Jihyeon Park and Younghyun Kim and Dongheok Park and Eunbyung Park},\n  year          = {2026},\n  eprint        = {2603.18524},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.CV},\n  url           = {https://arxiv.org/abs/2603.18524},\n}`;
     navigator.clipboard.writeText(raw);
     const btn = document.getElementById('bibCopyBtn');
     btn.textContent = 'Copied!'; btn.classList.add('copied');
