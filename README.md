@@ -23,6 +23,8 @@ Our framework comprises two components:
 - **3Dapter** — a visual conditioning module that enhances fine-grained texture preservation and accelerates convergence via multi-view joint attention with shared weights.
 - **3DreamBooth** — a DreamBooth-style test-time optimization that decouples spatial geometry from temporal motion through a 1-frame optimization paradigm, baking a robust 3D prior without exhaustive video-based training.
 
+![Training Pipeline](assets/training_pipeline.png)
+
 ---
 
 ## Results
