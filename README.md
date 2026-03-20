@@ -1,8 +1,8 @@
 <div align="center">
 <h1>3DreamBooth</h1>
 <h4>High-Fidelity 3D Subject-Driven Video Generation</h4>
-<a href="https://ko-lani.github.io">Hyun-kyu Ko</a><sup>1,</sup>  · 
-<a href="https://github.com/Kanadae">Jihyeon Park</a><sup>2,</sup>  · 
+<a href="https://ko-lani.github.io">Hyun-kyu Ko</a><sup>1,*</sup>  · 
+<a href="https://github.com/Kanadae">Jihyeon Park</a><sup>2,*</sup>  · 
 <a href="https://github.com/yhyun225">Younghyun Kim</a><sup>1</sup>  · 
 <a href="https://github.com/DHPark98">Dongheok Park</a><sup>2</sup>  · 
 <a href="https://silverbottlep.github.io">Eunbyung Park</a><sup>1,†</sup>
