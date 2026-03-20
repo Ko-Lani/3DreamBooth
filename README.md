@@ -11,10 +11,6 @@
 <a href="https://arxiv.org/abs/2603.18524"><img src="https://img.shields.io/badge/arXiv-2603.18524-b31b1b.svg?style=flat-square" alt="arXiv"/></a>
 <a href="https://ko-lani.github.io/3DreamBooth"><img src="https://img.shields.io/badge/Project-Page-DAA520?style=flat-square" alt="Project Page"/></a>
 
-<br/><br/>
-
-<img src="https://img.shields.io/badge/🚧_Code-Coming_Soon-orange?style=for-the-badge" alt="Coming Soon"/>
-
 </div>
 
 ---
