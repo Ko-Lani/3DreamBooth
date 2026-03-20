@@ -309,6 +309,17 @@
       .plain-dots { display: none; }
       .plain-nav { gap: 12px; }
     }
+    
+  .author-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .author-link:hover {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+  }
   </style>
 </head>
 <body>
@@ -334,11 +345,11 @@
 
   <div class="authors-block">
     <div class="author-names">
-      Hyun-kyu Ko<sup>1,*</sup>&ensp;
-      Jihyeon Park<sup>2,*</sup>&ensp;
-      Younghyun Kim<sup>1</sup>&ensp;
-      Dongheok Park<sup>2</sup>&ensp;
-      Eunbyung Park<sup>1,†</sup>
+      <a class="author-link" href="https://ko-lani.github.io" target="_blank">Hyun-kyu Ko</a><sup>1,*</sup>&ensp;
+      <a class="author-link" href="https://github.com/Kanadae" target="_blank">Jihyeon Park</a><sup>2,*</sup>&ensp;
+      <a class="author-link" href="https://github.com/yhyun225" target="_blank">Younghyun Kim</a><sup>1</sup>&ensp;
+      <a class="author-link" href="https://github.com/DHPark98" target="_blank">Dongheok Park</a><sup>2</sup>&ensp;
+      <a class="author-link" href="https://silverbottlep.github.io" target="_blank">Eunbyung Park</a><sup>1,†</sup>
     </div>
     <div class="author-affils">
       <span><span class="affil-num">1</span>Yonsei University</span>
