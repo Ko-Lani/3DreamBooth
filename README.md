@@ -6,7 +6,7 @@
 <a href="https://github.com/yhyun225">Younghyun Kim</a><sup>1</sup>  · 
 <a href="https://github.com/DHPark98">Dongheok Park</a><sup>2</sup>  · 
 <a href="https://silverbottlep.github.io">Eunbyung Park</a><sup>1,†</sup>
-<br/>
+<br/><br/>
 <sup>1</sup> Yonsei University    <sup>2</sup> Sungkyunkwan University
 <br/>
 <sub>* Equal contribution    † Corresponding author</sub>
