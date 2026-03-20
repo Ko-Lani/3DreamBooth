@@ -2,14 +2,14 @@
 <h1>3DreamBooth</h1>
 <h3>High-Fidelity 3D Subject-Driven Video Generation</h3>
 
-**Hyun-kyu Ko**<sup>1,\*</sup> · **Jihyeon Park**<sup>2,\*</sup> · **Younghyun Kim**<sup>1</sup> · **Dongheok Park**<sup>2</sup> · **Eunbyung Park**<sup>1,†</sup>
-
-<sup>1</sup> Yonsei University &nbsp; <sup>2</sup> Sungkyunkwan University &nbsp; <sup>\*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding author
-
-<br/>
-
 <a href="https://arxiv.org/abs/2603.18524"><img src="https://img.shields.io/badge/arXiv-2603.18524-b31b1b.svg?style=flat-square" alt="arXiv"/></a>
 <a href="https://ko-lani.github.io/3DreamBooth"><img src="https://img.shields.io/badge/Project-Page-DAA520?style=flat-square" alt="Project Page"/></a>
+
+
+
+https://github.com/user-attachments/assets/ea389e7c-ad1c-456b-a5e2-5884d13a667a
+
+
 
 </div>
 
