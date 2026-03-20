@@ -2,9 +2,14 @@
 <h1>3DreamBooth</h1>
 <h3>High-Fidelity 3D Subject-Driven Video Generation</h3>
 
+**Hyun-kyu Ko**<sup>1,\*</sup> · **Jihyeon Park**<sup>2,\*</sup> · **Younghyun Kim**<sup>1</sup> · **Dongheok Park**<sup>2</sup> · **Eunbyung Park**<sup>1,†</sup>
+
+<sup>1</sup> Yonsei University &nbsp; <sup>2</sup> Sungkyunkwan University &nbsp; <sup>\*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding author
+
+<br/>
+
 <a href="https://arxiv.org/abs/2603.18524"><img src="https://img.shields.io/badge/arXiv-2603.18524-b31b1b.svg?style=flat-square" alt="arXiv"/></a>
 <a href="https://ko-lani.github.io/3DreamBooth"><img src="https://img.shields.io/badge/Project-Page-DAA520?style=flat-square" alt="Project Page"/></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square" alt="License"/></a>
 
 <br/><br/>
 
@@ -61,16 +66,3 @@ If you find our work useful, please consider citing:
   url           = {https://arxiv.org/abs/2603.18524},
 }
 ```
-
----
-
-## Authors
-
-**Hyun-kyu Ko**<sup>1,\*</sup> · **Jihyeon Park**<sup>2,\*</sup> · **Younghyun Kim**<sup>1</sup> · **Dongheok Park**<sup>2</sup> · **Eunbyung Park**<sup>1,†</sup>
-
-<sup>1</sup> Yonsei University &nbsp; <sup>2</sup> Sungkyunkwan University  
-<sup>\*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding author
-
----
-
-<div align="center"><sub>© 2026 V-Laboratory, Yonsei University</sub></div>
