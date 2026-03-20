@@ -7,8 +7,9 @@
 <a href="https://github.com/DHPark98">Dongheok Park</a><sup>2</sup>  · 
 <a href="https://silverbottlep.github.io">Eunbyung Park</a><sup>1,†</sup>
 <br/>
-<sub><sup>1</sup> Yonsei University    <sup>2</sup> Sungkyunkwan University</sub>
+<sup>1</sup> Yonsei University    <sup>2</sup> Sungkyunkwan University
 <sub>* Equal contribution    † Corresponding author</sub>
+<br/><br/>
 <br/>
 
 <a href="https://arxiv.org/abs/2603.18524"><img src="https://img.shields.io/badge/arXiv-2603.18524-b31b1b.svg?style=flat-square" alt="arXiv"/></a>
