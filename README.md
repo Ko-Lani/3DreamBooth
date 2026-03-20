@@ -8,6 +8,7 @@
 <a href="https://silverbottlep.github.io">Eunbyung Park</a><sup>1,†</sup>
 <br/>
 <sup>1</sup> Yonsei University    <sup>2</sup> Sungkyunkwan University
+<br/>
 <sub>* Equal contribution    † Corresponding author</sub>
 <br/><br/>
 <br/>
