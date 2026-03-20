@@ -6,7 +6,9 @@
 <a href="https://ko-lani.github.io/3DreamBooth"><img src="https://img.shields.io/badge/Project-Page-DAA520?style=flat-square" alt="Project Page"/></a>
 
 
-<img src="assets/teaser.gif" width="100%" alt="3DreamBooth demo"/>
+
+https://github.com/user-attachments/assets/f968f978-01ab-4e78-98be-cbe212d44d1a
+
 
 </div>
 
