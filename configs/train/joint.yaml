@@ -1,0 +1,37 @@
+name: joint_default
+stage: train
+method: joint
+
+environment:
+  CUDA_VISIBLE_DEVICES: "0"
+
+runtime:
+  nproc_per_node: 1
+  master_port: 8003
+
+args:
+  sp_size: 1
+  pretrained_model_root: ./checkpoints/hunyuanvideo-1.5
+  pretrained_transformer_version: 720p_t2v
+  instance_data_root: ./data/my_subject/images
+  reference_path: ./data/my_subject/references
+  tdapter_path: ./checkpoints/3dapter/pytorch_lora_weights.safetensors
+  output_dir: ./outputs/joint/my_subject
+  train_prompts:
+    - A video of a [rhs plushie].
+  validation_prompts:
+    - A cinematic video of the [rhs plushie] on a beach at golden hour.
+  use_lora: true
+  use_lora_dreambooth: true
+  lora_r: 16
+  lora_alpha: 32
+  learning_rate: 1.0e-4
+  batch_size: 1
+  max_steps: 400
+  save_interval: 100
+  validation_interval: 100
+  validate_video_length: 49
+  ref_scale_min: 1.0
+  ref_scale_max: 1.0
+  train_timestep_shift: 1.0
+  enable_gradient_checkpointing: false

@@ -1,0 +1,24 @@
+name: 3dapter_validation
+stage: validate
+method: 3dapter
+
+environment:
+  CUDA_VISIBLE_DEVICES: "0"
+
+runtime:
+  nproc_per_node: 1
+  master_port: 8102
+
+args:
+  model_path: ./checkpoints/hunyuanvideo-1.5
+  tdapter_path: ./checkpoints/3dapter
+  reference_path: ./data/my_subject/references/001.png
+  prompts:
+    - A cinematic video of it in a sunlit forest.
+  output_dir: ./validation_outputs/3dapter
+  resolution: 720p
+  aspect_ratio: "16:9"
+  video_length: 49
+  flow_shift: 5.0
+  seed: 42
+  dtype: bf16

@@ -1,0 +1,8 @@
+extends: ../../validate/joint.yaml
+name: graduation_bear_joint_validation
+
+args:
+  checkpoint_path: ./outputs/joint/graduation_bear/checkpoint-400
+  reference_path: ./datasets/3d-custombench/subjects/graduation_bear/references
+  prompt: A video of a [rhs plushie] perched atop a bookshelf in a cozy living room, next to old books and a framed family photo.
+  output_path: ./validation_outputs/joint/graduation_bear.mp4
