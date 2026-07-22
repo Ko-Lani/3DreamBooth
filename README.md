@@ -350,36 +350,15 @@ Square brackets are config-only markup:
 
 The class word (`plushie`) describes the category; the rare identifier (`rhs`) carries its learned identity. Keep the marked phrase consistent across training and validation.
 
-## 3D-CustomBench release
-
-3D-CustomBench is published separately so the source repository remains lightweight. The release tool converts the legacy `full/`, `cond/`, and `prompts/` trees into stable semantic subject IDs and numbered files:
-
-```bash
-python scripts/data/prepare_custombench.py \
-  /path/to/legacy/custombench \
-  /path/to/3D-CustomBench-release
-```
-
-It creates `manifest.json` and per-subject metadata while retaining each old folder name as `legacy_id`. Follow [the 3D-CustomBench release guide](docs/custombench.md) to review, license, and upload the dataset to Hugging Face.
-
-The prepared release can be checked without uploading:
-
-```bash
-python scripts/data/upload_custombench.py --repo-id lanikoworld/3D-CustomBench
-```
-
-After selecting a license and running `hf auth login`, add `--upload`. The helper creates a private dataset by default; publication requires the explicit `--public` option.
-
 ## Repository layout
 
 ```text
 3DreamBooth/
 ├── configs/                  # reproducible train/validation YAML files
-├── custombench/README.md     # Hugging Face dataset card template
 ├── docs/                     # detailed usage and release notes
 ├── hyvideo/                  # models, pipelines, and datasets
 ├── scripts/
-│   ├── data/                 # 3D-CustomBench download/release tools
+│   ├── data/                 # 3D-CustomBench download utilities
 │   ├── train/                # thin config-based shell entrypoints
 │   ├── validate/             # thin config-based shell entrypoints
 │   └── run.py                # unified experiment launcher
