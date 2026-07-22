@@ -389,7 +389,6 @@ After selecting a license and running `hf auth login`, add `--upload`. The helpe
 
 ## Notes
 
-- Checkpoints, pretrained weights, datasets, caches, W&B logs, generated videos, and experiment outputs are excluded from source control.
 - Video lengths used by 3DreamBooth and Joint validation must be `4n + 1` (for example 49, 81, or 129).
 - Original 3DreamBooth contributions are released under [Apache 2.0](LICENSE). Hunyuan-derived components remain subject to the [Tencent Hunyuan Community License](LICENSE_HUNYUAN) and [NOTICE](NOTICE). 3D-CustomBench is released separately under CC BY 4.0.
 
