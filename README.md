@@ -52,11 +52,11 @@ Our framework comprises two components:
 
 The public release currently includes:
 
-- [x] Inference code
-- [x] 3Dapter pretrained weights
-- [x] 3D-CustomBench benchmark
-- [x] Training code
-- [ ] Evaluation code
+- ✅ Inference code
+- ✅ 3Dapter pretrained weights
+- ✅ 3D-CustomBench benchmark
+- ✅ Training code
+- ⬜ Evaluation code
 
 **Star ⭐ this repo to get notified when the evaluation code drops.**
 
