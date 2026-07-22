@@ -1,0 +1,10 @@
+extends: ../../train/3dreambooth.yaml
+name: graduation_bear_3dreambooth
+
+args:
+  instance_data_root: ./datasets/3d-custombench/subjects/graduation_bear/images
+  output_dir: ./outputs/3dreambooth/graduation_bear
+  train_prompts:
+    - A video of a [rhs plushie].
+  validation_prompts:
+    - A video of a [rhs plushie] perched atop a bookshelf in a cozy living room, next to old books and a framed family photo.

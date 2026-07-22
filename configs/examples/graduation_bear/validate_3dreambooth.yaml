@@ -1,0 +1,7 @@
+extends: ../../validate/3dreambooth.yaml
+name: graduation_bear_3dreambooth_validation
+
+args:
+  checkpoint_path: ./outputs/3dreambooth/graduation_bear/checkpoint-400
+  prompt: A video of a [rhs plushie] perched atop a bookshelf in a cozy living room, next to old books and a framed family photo.
+  output_path: ./validation_outputs/3dreambooth/graduation_bear.mp4

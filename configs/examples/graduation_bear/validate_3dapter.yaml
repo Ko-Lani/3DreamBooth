@@ -1,0 +1,8 @@
+extends: ../../validate/3dapter.yaml
+name: graduation_bear_3dapter_validation
+
+args:
+  reference_path: ./datasets/3d-custombench/subjects/graduation_bear/references/001.png
+  prompts:
+    - A video of it perched atop a bookshelf in a cozy living room.
+  output_dir: ./validation_outputs/3dapter/graduation_bear

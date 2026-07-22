@@ -1,0 +1,25 @@
+name: 3dreambooth_validation
+stage: validate
+method: 3dreambooth
+
+environment:
+  CUDA_VISIBLE_DEVICES: "0"
+
+runtime:
+  nproc_per_node: 1
+  master_port: 8101
+
+args:
+  sp_size: 1
+  pretrained_model_root: ./checkpoints/hunyuanvideo-1.5
+  pretrained_transformer_version: 720p_t2v
+  checkpoint_path: ./outputs/3dreambooth/my_subject/checkpoint-400
+  prompt: A cinematic video of the [rhs plushie] on a beach at golden hour.
+  output_path: ./validation_outputs/3dreambooth/my_subject.mp4
+  video_length: 49
+  aspect_ratio: "16:9"
+  seed: 42
+  num_inference_steps: 50
+  guidance_scale: 6.0
+  flow_shift: 5.0
+  fps: 24
