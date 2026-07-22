@@ -369,7 +369,12 @@ The class word (`plushie`) describes the category; the rare identifier (`rhs`) c
 ## Notes
 
 - Video lengths used by 3DreamBooth and Joint validation must be `4n + 1` (for example 49, 81, or 129).
-- Original 3DreamBooth contributions are released under [Apache 2.0](LICENSE). Hunyuan-derived components remain subject to the [Tencent Hunyuan Community License](LICENSE_HUNYUAN) and [NOTICE](NOTICE). 3D-CustomBench is released separately under CC BY 4.0.
+
+## License
+
+Original 3DreamBooth contributions are released under the [Apache License 2.0](LICENSE). This repository contains code derived from HunyuanVideo-1.5, which remains subject to the [Tencent Hunyuan Community License](LICENSE_HUNYUAN). See [NOTICE](NOTICE) for third-party attributions.
+
+[3D-CustomBench](https://huggingface.co/datasets/lanikoworld/3D-CustomBench) is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Citation
 
@@ -385,3 +390,10 @@ If this project is useful in your research, please cite the paper:
   primaryClass  = {cs.CV},
   url           = {https://arxiv.org/abs/2603.18524}
 }
+```
+
+## Acknowledgements
+
+This project builds upon [HunyuanVideo-1.5](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5). Our subject-customization formulation is inspired by [DreamBooth](https://dreambooth.github.io/), and our reference-conditioning design builds on [OminiControl](https://github.com/Yuanshi9815/OminiControl).
+
+We thank the authors for their excellent work and open-source contributions.
