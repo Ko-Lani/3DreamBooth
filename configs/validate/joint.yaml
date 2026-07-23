@@ -16,6 +16,7 @@ args:
   checkpoint_path: ./outputs/joint/my_subject/checkpoint-400
   reference_path: ./data/my_subject/references
   prompt: A cinematic video of the [rhs plushie] on a beach at golden hour.
+  negative_prompt: Aerial view, aerial view, overexposed, low quality, deformation, a poor composition, bad hands, bad teeth, bad eyes, bad limbs, distortion
   output_path: ./validation_outputs/joint/my_subject.mp4
   video_length: 49
   aspect_ratio: "16:9"
