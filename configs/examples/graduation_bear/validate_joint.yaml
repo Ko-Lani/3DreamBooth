@@ -5,4 +5,5 @@ args:
   checkpoint_path: ./outputs/joint/graduation_bear/checkpoint-400
   reference_path: ./datasets/3d-custombench/subjects/graduation_bear/references
   prompt: A video of a [rhs plushie] perched atop a bookshelf in a cozy living room, next to old books and a framed family photo.
+  negative_prompt: Aerial view, aerial view, overexposed, low quality, deformation, a poor composition, bad hands, bad teeth, bad eyes, bad limbs, distortion
   output_path: ./validation_outputs/joint/graduation_bear.mp4
