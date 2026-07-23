@@ -15,7 +15,7 @@ args:
   pretrained_transformer_version: 720p_t2v
   checkpoint_path: ./outputs/3dreambooth/my_subject/checkpoint-400
   prompt: A cinematic video of the [rhs plushie] on a beach at golden hour.
-  negative_prompt: "Aerial view, aerial view, overexposed, low quality, deformation, a poor composition, bad hands, bad teeth, bad eyes, bad limbs, distortion"
+  negative_prompt: Aerial view, aerial view, overexposed, low quality, deformation, a poor composition, bad hands, bad teeth, bad eyes, bad limbs, distortion
   output_path: ./validation_outputs/3dreambooth/my_subject.mp4
   video_length: 49
   aspect_ratio: "16:9"
